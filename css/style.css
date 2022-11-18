@@ -160,7 +160,6 @@ body {
 
 .background{
   max-height: 100vh;
-  overflow: hidden;
   z-index: -1;
 }
 .background #one{
@@ -255,4 +254,31 @@ body {
 
 .description, #city, .person-age {
   color: var(--Dark-grayish-blue);
+}
+
+@media screen and (max-width: 400px) {
+  .background #one{
+    top: 454px;
+    left: 100px;
+    width: 468px;
+    height: auto;
+  }
+  .background #two{
+    top: -318px;
+    left: -322px;
+    width: 553px;
+    height: auto;
+  }
+  .container {
+    width: 20rem;
+    height: 23rem;
+  }
+  .container::after{
+    width: 20rem;
+    height: 132px;
+  }
+  .social{
+    width: 18rem;
+    margin-top: 47px;
+  }
 }
